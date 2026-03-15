@@ -29,8 +29,7 @@
         <h2>Sobre mim</h2>
 
         <img src="https://media.licdn.com/dms/image/v2/D4D03AQHQNTkvIk2XTA/profile-displayphoto-shrink_800_800/B4DZaSPflxG8Ac-/0/1746210258324?e=1775088000&v=beta&t=uOt2lCVj01SBYWl1hISrhknXX9_qOBP3w9HGYBbwits"
-            alt="Imagem de foto do perfil" width="200"
-            title="Imagem do perfil">
+            alt="Imagem de foto do perfil" width="200" title="Imagem do perfil">
 
         <article>
             <p>
@@ -40,7 +39,7 @@
 
 
         <aside>
-            <h3>Habilidades</h3>
+            <h2>Habilidades</h2>
             <ul>
                 <li>HTML</li>
                 <LI>CSS</LI>
@@ -53,24 +52,102 @@
         <h2>Projetos</h2>
 
         <article>
-            <h3>Portifólio</h3>
+            <h2>Portifólio</h2>
             <p>
-                Este foi prImeiro site que desenvolvi, através do curso introdutório de front-end, oferecido por SCTEC.
+                Este foi primeiro site que desenvolvi, através do curso introdutório de front-end, oferecido por SCTEC.
             </p>
 
         </article>
 
     </section>
+
+    <section id="habilidades"> <!--nova seção aula 5 -->
+
+        <h2>Habilidades e Tecnologias</h2><!-- titulos-->
+
+        <table><!--tag table: tabela, com cabeçario, linhas e colunas -->
+            <thead> <!--tag  que define cabeçario-->
+                <tr><!-- tag (TR)-1°LINHA: que define uma nova linha -->
+                    <th>Tecnoligia</th> <!---tag que define as colunas-->
+                    <th>Nível</th>
+                    <th>Descrição</th>
+
+                </tr>
+            </thead>
+
+            <tbody> <!----tag que define o corpo da tabela, para criar linhas e colunas-->
+                <tr>
+                    <td>HTML</td>
+                    <td>Iniciantes</td>
+                    <td>Capaz de construir estruturas de páginas web semanticas e responsivas.</td>
+                </tr>
+
+                 <tr>
+                    <td>CSS</td>
+                    <td>Intermediário</td>
+                    <td>Experiencia  com flexbox, grid e animaçoes CSS</td>
+                </tr>
+
+
+                 <tr>
+                    <td>JavaScript</td>
+                    <td>Básico</td>
+                    <td>Desenvolvimento de scripts do lado do cliente para interações.</td>
+                </tr>
+                
+         </tbody>
+        </table>
+
+    </section>
+
+
+
     <footer>
-        <p>Direitos reservados a Simone</p>
+        <p>Direitos reservados a Simone.</p>
 
         <section id="contato">
             <h2>Contato</h2>
 
             <p>Tem um projeto em mente? Entre em contato.</p>
+
+            <form action=""> <!-- envia a ação par um servidor-->
+
+                <label for="nome">Nome:</label><!--tag formulario-->
+                <input type="text" id="nome" name="nome" required> <br>
+                <!--esse comando e padra, segue sempre acompanhado imput+id+name: com mesmo valor do label-->
+
+                <label for="e-mail">E-mail: </label><!--tag formulario-->
+                <input type="e-mail" id="e-mail" name="e-mail" required> <br>
+
+                <label for="telefone">Telefone: </label><!--tag formulario-->
+                <input type="tel" id="telefone" name="telefone"> <br>
+
+                <label for="assunto">Assunto: </label> <!--tag formulario-->
+                <select name="assunto" id="assunto"> <br> <!--tag de seleção-->
+
+                    <option value="orcamento">Orçamento</option> <!--caixa de seleção-->
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+
+                </select>
+                <br>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="5" required></textarea> <br>
+
+                <input type="checkbox" id="inscricao" name="inscricao"> <!--checkbox campo de marcaçao-->
+                <label for="inscricao">Deseja receber minha newsletter? Fique por dentro.</label>
+
+                <br>
+
+                <input type="submit"
+                    value="Enviar mensagem"><!--submit envia todas as informações do formulario para algum lugar, que sera ensinado mais pra frente.-->
+
+            </form>
+
             <address>
                 E-mail: <a href="mailto:simone@sisi.com">simone@sisi.com</a><br>
-                Telfone: <a href="tel:+5548999999999">+5548999999999</a><br>
+                Telefone: <a href="tel:+5548999999999">+5548999999999</a><br>
             </address>
         </section>
     </footer>
