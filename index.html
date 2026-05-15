@@ -13,7 +13,8 @@
 
         <nav> <!--Seleção de navegação do site.-->
             <ul><!--Lista não ordenada para Links do nosso menu.-->
-                <li><a href="#Sobre">Sobre mim</a></li> <!--para achar a seção usasse o mesmo id ex. (<li><a href=">#Sobre">Sobre mim<a></li>) no (<section id="sobre">)-->
+                <li><a href="#Sobre">Sobre mim</a></li>
+                <!--para achar a seção usasse o mesmo id ex. (<li><a href=">#Sobre">Sobre mim<a></li>) no (<section id="sobre">)-->
                 <li><a href="#Projetos">Projetos</a></li>
                 <li><a href="#Contato">Contato</a></li>
                 <li><a href="https://google.com.br/" target="_blank">Google</a></li>
@@ -26,7 +27,8 @@
     <section id="sobre"><!--abrir nova seção-->
         <h2>Sobre mim</h2>
         <!--h1,h2,h3,h4 sao tamanhos de titulos -->
-        <img src="C:\Users\User\OneDrive\Pictures\image (2).png" width="200" alt="Foto de Simone" title="Foto de Simone">
+        <img src="C:\Users\User\OneDrive\Pictures\image (2).png" width="200" alt="Foto de Simone"
+            title="Foto de Simone">
         <!--alt= se nao carregar a imagem ele mostra um texto-->
         <!--src é o caminho da imagem,width diminui ou aumente imagem, alt= se nao carregar a imagem ele mostra um texto -->
 
@@ -58,6 +60,7 @@
 
 
     <section id="projetos"><!--abrir nova seção-->
+
         <h2>Projetos:</h2>
 
         <article>
@@ -84,6 +87,48 @@
         </article>
     </section>
 
+    <section id="habilidades">
+
+        <h2>Habilidades e tecnologia</h2>
+
+        <table>
+            <thead>
+                 <tr>
+                    <th>Tecnologia</th>
+                    <th>Nível</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Iniciante</td>
+                    <td>Conhecimento básico em estruturação de páginas web.</td>
+                </tr>
+
+                <tr>
+                    <td>CSS</td>
+                    <td>Iniciante</td>
+                    <td>Experiencia com flexbox, grid e animações.</td>
+
+                 </tr>   
+
+                   <tr>
+                    <td>JavaScript</td>
+                    <td>Básico</td>
+                    <td>Desenvolvimento de scripts do lado do cliente.</td>
+
+                 </tr>  
+            </tbody>
+
+
+
+         </table>
+
+
+    </section>
+
 
 
     <footer>
@@ -93,6 +138,40 @@
             <h1>Contato:</h1>
 
             <p>Tem um projeto em mente? Entre em contato através.</p>
+
+            <form action="">
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required> <br>
+                <!--required= campo obrigatorio a ser preenchido-->
+
+                <label for="e-mail">E-mail:: </label>
+                <input type="e-mail" id="e-mail" name="e-mail" required> <br>
+
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" name="telefone" required> <br>
+
+                <label for="assunto">Assunto: </label>
+                <select name="assunto" id="assunto">
+                    <option value="orçamento">Orçamento</option> <!-- checko-->
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">outro</option>
+                </select>
+
+                <br>
+
+
+                <label for="mensagens">Mensagens:</label>
+                <textarea name="mensagens" id="mesagens" cols="20" rows="5" required></textarea> <br>
+
+                <input type="checkbox" id="inscriao" name="inscricao">
+                <label for="inscricao">Deseja receber minha newsletter? Fique por dentro.</label>
+
+                <br>
+
+                <input type="submit" value="Enviar mensagem">
+
+            </form>
 
             <address><!--de endereço/contatos-->
                 E-mail: <a href="mailto:simone@simone.com">simone@simone.com</a> <br>
